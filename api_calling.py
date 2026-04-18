@@ -14,7 +14,7 @@ def code_generator(images,options):
     else:
         promt="Analyze these coding error screenshots and provide the correct code with explanation."
     response=client.models.generate_content(
-        model="gemini-3-flash-preview",
+        model="gemini-2.0-flash",
         contents=[images,promt]
     )
     return response.text
